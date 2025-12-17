@@ -15,6 +15,7 @@
 1. Клонируйте репозиторий:
 ```
 git clone https://github.com/Engel315/Web-Gallery.git
+cd photoweb
 ```
 2. Создайте и активируйте виртуальное окружение:
 ```
