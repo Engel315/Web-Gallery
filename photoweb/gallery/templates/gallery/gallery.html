@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Галерея</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .folders a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 5px 10px;
+      background: #eee;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 200px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Галерея</h1>
+
+{% if current %}
+  <p><a href="/gallery/">⬅ Назад</a></p>
+{% endif %}
+
+<div class="folders">
+  {% for f in folders %}
+    <a href="/gallery/{{ current }}{{ f }}/">{{ f }}</a>
+  {% endfor %}
+</div>
+
+<div class="gallery">
+  {% for photo in photos %}
+    <img src="{{ photo }}" loading="lazy">
+  {% endfor %}
+</div>
+
+</body>
+</html>
