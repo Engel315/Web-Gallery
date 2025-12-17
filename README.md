@@ -14,7 +14,7 @@
 ## Установка
 1. Клонируйте репозиторий:
 ```
-git clone https:/Engel315/Web-Gallery/github.com//photogallery.git
+git clone https://github.com/Engel315/Web-Gallery.git
 cd photogallery
 ```
 2. Создайте и активируйте виртуальное окружение:
