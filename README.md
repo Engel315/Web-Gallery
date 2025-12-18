@@ -27,6 +27,11 @@ source .venv/bin/activate  # Linux/Mac
 ```
 python manage.py migrate
 ```
+4. Установка зависимостей:
+```
+pip install -r requirements.txt
+pip install Pillow
+```
 ## Запуск проекта
 ```
 python manage.py runserver
