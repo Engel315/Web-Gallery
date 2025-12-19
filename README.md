@@ -29,7 +29,7 @@ python manage.py migrate
 ```
 4. Установка зависимостей:
 ```
-pip install -r requirements.txt
+pip install django
 pip install Pillow
 ```
 ## Запуск проекта
